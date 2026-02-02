@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOM Practice App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>Task Manager</h1>
+
+    <form id="taskForm">
+      <input type="text" id="taskin" placeholder="Enter task..." />
+      <button type="submit" id="add">Add</button>
+    </form>
+
+    <div class="filters">
+      <button data-filter="all" class="filter active">All</button>
+      <button data-filter="completed" class="filter">Completed</button>
+      <button data-filter="pending" class="filter">Pending</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <p id="count">0 tasks</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
